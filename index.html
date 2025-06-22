@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brightstep Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #002147;
+      color: white;
+      padding: 0.8rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+  position: relative;
+  text-align: center;
+  padding: 10rem 1rem;
+  background-image: url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGVkdWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
+}
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+    }
+    .hero h1 {
+      font-size: 1.0rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 1rem;
+      text-align: center;
+    }
+    .section h2 {
+      margin-bottom: 1rem;
+      color: #002147;
+    }
+    .section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+    .programs {
+  padding: 1.5rem;
+  background-color: #f0f8ff; /* light blue background */
+}
+.programs h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #002147; /* dark blue heading */
+  font-size: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.card h3 {
+  color: #ff7f1f; /* orange headings */
+  margin-top: 0.5rem;
+}
+
+    .popup-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff7f1f;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .logo {
+      height: 80px;
+    }
+.section.mission {
+  background-color: #f0f8ff; /* light purple */
+  padding: 2rem;
+}
+
+.section.vision {
+  background-color: #fff8dc; /* light purple */
+  padding: 2rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logi.jpeg" alt="Brightstep Logo" class="logo" />
+    <nav>
+  <a href="#home">Home</a>
+  <a href="#programs">Programs</a>
+  <a href="#careers">Careers</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Brightstep Education</h1>
+    <p>Brightstep believes in learning that leads to real-life change.
+Chase your goals, build your future, and believe in more.
+We’re more than a platform — we’re your partner in growth.
+Fuel your dreams with confidence at Brightstep..</p>
+  </section>
+
+
+
+  <section class="section mission">
+    <h2>Our Mission</h2>
+    <p>To empower students and professionals with accessible, career-oriented education that adapts to their pace, supports their goals, and uplifts their future. Brightstep Education is committed to removing barriers and creating brighter pathways through learning.</p>
+  </section>
+
+  <section class="section vision">
+    <h2>Our Vision</h2>
+    <p>We envision a world where education is not an anchor but a wave of growth — lifting individuals toward personal and professional success, no matter where they start. Brightstep aims to be the most trusted partner for modern, flexible, and meaningful education in India.</p>
+  </section>
+
+  <section class="programs" id="programs">
+    <h2>Our Programs</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww" alt="Undergraduate">
+        <h3>Undergraduate</h3>
+      </div>
+      <div class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1682974403683-591557aa631b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9zdCUyMGdyYWR1YXRlfGVufDB8fDB8fHww" alt="Postgraduate">
+        <h3>Postgraduate</h3>
+      </div>
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/1942946172/photo/mba-master-of-business-administrations-learning-journey-through-e-learning-education-and.jpg?s=612x612&w=0&k=20&c=iGOcVvxy38HVtgdjgFbOCQq6FXpndcMxE-46idH4q9E=" alt="Online MBA">
+        <h3>Online MBA</h3>
+      </div>
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/1364946137/photo/businessman-holding-and-showing-the-best-quality-assurance-with-golden-five-stars-for.jpg?s=612x612&w=0&k=20&c=ewqI36IOI0FE9fQGEjhVrdR_4sAg77ICJJ2gZgZxH-0=" alt="Certificates">
+        <h3>Certificates</h3>
+      </div>
+    </div>
+  </section>
+<!-- Careers & Placements Section -->
+<section class="section careers" id="careers">
+  <h2>Careers & Placements</h2>
+  <p>At Brightstep Education, we don’t just offer academic programs — we also guide students toward successful careers.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Career Support</h3>
+      <p>We offer career counselling, resume building, and interview preparation to help students become job-ready.</p>
+    </div>
+    <div class="card">
+      <h3>Placement Assistance</h3>
+      <p>Brightstep partners with top companies across sectors to provide placement opportunities to deserving candidates.</p>
+    </div>
+    <div class="card">
+      <h3>Hiring Companies</h3>
+      <p>We collaborate with leading firms in IT, Finance, Marketing, and more for internships and job placements.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer id="contact" style="background: #002147; color: white; padding: 2rem;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: start; gap: 2rem; max-width: 1200px; margin: auto;">
+
+    <!-- Logo -->
+      <!-- Logo Section -->
+  <div style="flex: 1; min-width: 220px;">
+    <img src="logi.jpeg" alt="Brightstep Logo" style="height: 60px; margin-bottom: 1rem;">
+    <p style="line-height: 1.5;">Brightstep Education is committed to transforming dreams into careers through flexible and future-ready learning.</p>
+  </div>
+
+  <!-- Quick Links -->
+  <div style="flex: 1; min-width: 180px;">
+    <h3>Quick Links</h3>
+    <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
+      <li><a href="#home" style="color: white; text-decoration: none;">Home</a></li>
+      <li><a href="#programs" style="color: white; text-decoration: none;">Programs</a></li>
+      <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact Info -->
+  <div style="flex: 1; min-width: 200px;">
+    <h3>Contact Us</h3>
+    <p><strong>Phone:</strong> +91 9022330753</p>
+    <p><strong>Email:</strong> brightstep@gmail.com</p>
+    <p><strong>Office:</strong> Hadapsar, Pune, Maharashtra</p>
+  </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem; font-size: 0.9rem;">
+    &copy; 2025 Brightstep Education. All Rights Reserved.
+  </div>
+</footer>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd19oYS2We5085Of6i9s1DTIM2Aq7-H0OUhx5enPhB4eW_Gvg/viewform?usp=header" 
+   target="_blank" 
+   style="position: fixed; bottom: 20px; left: 20px; background-color: #ff7f1f; color: white; border: none; padding: 0.8rem 1.2rem; border-radius: 10px; font-weight: bold; text-decoration: none;">
+  Enquiry
+</a>
+
+<!-- Apply Now Button -->
+<button onclick="document.getElementById('popupForm').style.display='block'" 
+        style="position: fixed; bottom: 20px; right: 20px; background-color: #ff7f1f; color: white; border: none; padding: 1rem 1.5rem; border-radius: 10px; font-weight: bold; cursor: pointer;">
+  Apply Now
+</button>
+
+<!-- Popup Form -->
+<div id="popupForm" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 999;">
+  <div style="background: white; max-width: 400px; margin: 10% auto; padding: 2rem; border-radius: 10px; position: relative;">
+    <h2 style="margin-top: 0;">Enquiry Form</h2>
+    <form action="https://forms.gle/YOUR_FORM_LINK" target="_blank">
+      <label>Name:</label><br>
+      <input type="text" name="name" required style="width: 100%; margin-bottom: 1rem;"><br>
+      <label>Phone:</label><br>
+      <input type="text" name="phone" required style="width: 100%; margin-bottom: 1rem;"><br>
+      <label>Email:</label><br>
+      <input type="email" name="email" style="width: 100%; margin-bottom: 1rem;"><br>
+      <label>Message:</label><br>
+      <textarea name="message" rows="4" style="width: 100%; margin-bottom: 1rem;"></textarea><br>
+      <button type="submit" style="background-color: #002147; color: white; border: none; padding: 0.6rem 1rem; border-radius: 6px;">Submit</button>
+      <button type="button" onclick="document.getElementById('popupForm').style.display='none'" style="margin-left: 1rem;">Cancel</button>
+    </form>
+  </div>
+</div>
+<!-- Apply Now Button -->
+<button onclick="document.getElementById('popupForm').style.display='block'" 
+        style="position: fixed; bottom: 20px; right: 20px; background-color: #ff7f1f; color: white; border: none; padding: 1rem 1.5rem; border-radius: 10px; font-weight: bold; cursor: pointer;">
+  Apply Now
+</button>
+
+<!-- Popup Form -->
+<div id="popupForm" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 999;">
+  <div style="background: white; max-width: 400px; margin: 10% auto; padding: 2rem; border-radius: 10px; position: relative;">
+    <h2 style="margin-top: 0;">Enquiry Form</h2>
+    <form onsubmit="sendToWhatsApp(event)">
+      <label>Name:</label><br>
+      <input type="text" id="wa-name" required style="width: 100%; margin-bottom: 1rem;"><br>
+      <label>Phone:</label><br>
+      <input type="text" id="wa-phone" required style="width: 100%; margin-bottom: 1rem;"><br>
+      <label>Message:</label><br>
+      <textarea id="wa-message" rows="4" style="width: 100%; margin-bottom: 1rem;"></textarea><br>
+      <button type="submit" style="background-color: #002147; color: white; border: none; padding: 0.6rem 1rem; border-radius: 6px;">Send via WhatsApp</button>
+      <button type="button" onclick="document.getElementById('popupForm').style.display='none'" style="margin-left: 1rem;">Cancel</button>
+    </form>
+  </div>
+</div>
+
+<!-- WhatsApp Script -->
+<script>
+  function sendToWhatsApp(e) {
+    e.preventDefault();
+    const name = document.getElementById("wa-name").value;
+    const phone = document.getElementById("wa-phone").value;
+    const message = document.getElementById("wa-message").value;
+    const fullMessage = `Name: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
+    const whatsappLink = ``https://wa.me/919022330753?text=${encodeURIComponent(message)}`;
+    window.open(https://docs.google.com/forms/d/e/1FAIpQLSd19oYS2We5085Of6i9s1DTIM2Aq7-H0OUhx5enPhB4eW_Gvg/viewform?usp=header, "_blank");
+  }
+</script>
+
+
+</body>
+
+</html>
+
