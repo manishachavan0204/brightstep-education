@@ -8,31 +8,37 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      padding: 40px;
-      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7fa;
       color: #333;
     }
 
-    h1 {
-      color: #0a3d62;
-      font-size: 32px;
-    }
-
-    .highlight {
-      color: #f39c12;
-      font-weight: bold;
-    }
-
-    .section {
-      margin-bottom: 30px;
+    header {
+      background-color: #0a3d62;
       padding: 20px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    header img {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      color: #fff;
+      margin: 10px 0 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
 
     nav a {
-      margin-right: 20px;
+      margin: 0 15px;
       text-decoration: none;
       color: #0a3d62;
       font-weight: 600;
@@ -42,16 +48,48 @@
       color: #f39c12;
     }
 
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .section {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #0a3d62;
+    }
+
     ul {
       padding-left: 20px;
     }
 
     ul li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <img src="logo.jpeg" alt="Brightstep Logo" />
+    <h1>Brightstep Education</h1>
+  </header>
 
   <nav>
     <a href="index.html">Home</a>
@@ -60,28 +98,34 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <h1>About <span class="highlight">Brightstep Education</span></h1>
+  <div class="container">
 
-  <div class="section">
-    <p><strong>Brightstep Education</strong> is your gateway to career-building education. Whether you're a student looking to start your degree, or a working professional seeking to upskill, we help you take the right step forward.</p>
-    <p>We collaborate with reputed universities and colleges to make higher education more approachable, trusted, and tailored to your goals.</p>
-  </div>
+    <img src="banner.jpg" alt="Education Banner" class="banner" />
 
-  <div class="section">
-    <h2>🚀 What Makes Us Different</h2>
-    <ul>
-      <li><strong>Personal Counselling:</strong> We guide you at every step — from selecting the right course to completing your admission.</li>
-      <li><strong>Wide Program Choices:</strong> UG, PG, MBA, and certificate programs across streams — all in one place.</li>
-      <li><strong>Trusted University Tie-ups:</strong> We partner only with approved and recognized institutions.</li>
-      <li><strong>Zero Extra Charges:</strong> Our counselling is 100% free for students. We earn only from university partnerships.</li>
-      <li><strong>Local Support:</strong> Based in Pune, we understand the regional education space and offer on-ground assistance when needed.</li>
-    </ul>
-  </div>
+    <div class="section">
+      <h2>About Us</h2>
+      <p><strong>Brightstep Education</strong> is a modern education service helping students and professionals take confident steps toward success. From undergraduate to MBA programs, we guide, counsel, and connect you with the right university — all with transparency and care.</p>
+      <p>Based in Pune and serving students across India, we specialize in online + offline admissions with strong partnerships and trusted results.</p>
+    </div>
 
-  <div class="section">
-    <h2>📍 Based in Pune. Supporting Students Nationwide.</h2>
-    <p>We are proud to be a Pune-based company working closely with colleges and universities to bring better education opportunities to students across India — both online and offline.</p>
+    <div class="section">
+      <h2>🚀 What Makes Us Different</h2>
+      <ul>
+        <li><strong>✔ Personal Counselling:</strong> One-to-one guidance from start to finish.</li>
+        <li><strong>✔ Wide Range of Programs:</strong> UG, PG, MBA & Certifications — all approved.</li>
+        <li><strong>✔ Zero Student Charges:</strong> We work on a commission model with universities.</li>
+        <li><strong>✔ Pune-Based, India-Focused:</strong> We understand student needs regionally and nationally.</li>
+        <li><strong>✔ Fast, Friendly Support:</strong> Always available on call, WhatsApp or email.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📍 Our Reach</h2>
+      <p>Brightstep is actively working with universities across Maharashtra and beyond. Whether you are in a metro city or a small town, we help you take the right step forward in education and career.</p>
+    </div>
+
   </div>
 
 </body>
 </html>
+
