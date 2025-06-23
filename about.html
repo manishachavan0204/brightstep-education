@@ -1,96 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | Brightstep Education</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>About Us - Brightstep Education</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f7fa;
-      color: #333;
-    }
-
-    header {
-      background-color: #0a3d62;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 150px;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      color: #fff;
-      margin: 10px 0 0;
+      font-family: Arial, sans-serif;
     }
 
     nav {
-      background-color: #ffffff;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      background-color: #0a3d62;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
     }
 
     nav a {
-      margin: 0 15px;
+      color: white;
       text-decoration: none;
-      color: #0a3d62;
-      font-weight: 600;
+      margin: 0 15px;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: #f39c12;
+      text-decoration: underline;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
+    .about-section {
+      background-color: #f0f4f8;
+      padding: 60px 20px;
     }
 
-    .section {
-      background: #fff;
-      padding: 25px;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    .about-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
     }
 
-    h2 {
+    .about-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-img img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-content {
+      flex: 1;
+    }
+
+    .about-content h2 {
       color: #0a3d62;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 12px;
+    .about-content p {
+      font-size: 18px;
       line-height: 1.6;
+      color: #333;
+      margin-bottom: 20px;
     }
 
-    .banner {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 30px;
+    .about-content ul {
+      color: #0a3d62;
+      font-weight: 500;
+      line-height: 1.8;
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="logo.jpeg" alt="Brightstep Logo" />
-    <h1>Brightstep Education</h1>
-  </header>
-
+  <!-- Navigation Bar -->
   <nav>
     <a href="index.html">Home</a>
     <a href="programs.html">Programs</a>
@@ -98,34 +88,34 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="container">
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container">
 
-    <img src="banner.jpg" alt="Education Banner" class="banner" />
+      <!-- Left Side: Image -->
+      <div class="about-img">
+        <img src="about-banner.png" alt="Brightstep Team">
+      </div>
 
-    <div class="section">
-      <h2>About Us</h2>
-      <p><strong>Brightstep Education</strong> is a modern education service helping students and professionals take confident steps toward success. From undergraduate to MBA programs, we guide, counsel, and connect you with the right university — all with transparency and care.</p>
-      <p>Based in Pune and serving students across India, we specialize in online + offline admissions with strong partnerships and trusted results.</p>
+      <!-- Right Side: Text -->
+      <div class="about-content">
+        <h2>What Makes Us Different</h2>
+        <p>
+          At <strong>Brightstep Education</strong>, we go beyond admissions. We offer full student support with affordable, flexible, and trusted programs in UG, PG, and online MBAs.
+        </p>
+        <ul>
+          <li>✅ Free personal admission counselling</li>
+          <li>✅ Direct tie-ups with trusted Indian universities</li>
+          <li>✅ Affordable, verified degree programs</li>
+          <li>✅ Quick admission support — from enquiry to offer letter</li>
+          <li>✅ 100% guidance with no extra cost to student</li>
+        </ul>
+      </div>
+
     </div>
-
-    <div class="section">
-      <h2>🚀 What Makes Us Different</h2>
-      <ul>
-        <li><strong>✔ Personal Counselling:</strong> One-to-one guidance from start to finish.</li>
-        <li><strong>✔ Wide Range of Programs:</strong> UG, PG, MBA & Certifications — all approved.</li>
-        <li><strong>✔ Zero Student Charges:</strong> We work on a commission model with universities.</li>
-        <li><strong>✔ Pune-Based, India-Focused:</strong> We understand student needs regionally and nationally.</li>
-        <li><strong>✔ Fast, Friendly Support:</strong> Always available on call, WhatsApp or email.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>📍 Our Reach</h2>
-      <p>Brightstep is actively working with universities across Maharashtra and beyond. Whether you are in a metro city or a small town, we help you take the right step forward in education and career.</p>
-    </div>
-
-  </div>
+  </section>
 
 </body>
 </html>
+
 
